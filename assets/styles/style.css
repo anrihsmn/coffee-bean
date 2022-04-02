@@ -297,7 +297,7 @@ form{
   width: 49%;
   background-color: #f2f2f2;
   padding: 1em;
-  height: 600px;
+  height: 650px;
 }
 .form-group:nth-child(1){
   margin-right: 2%;
@@ -426,7 +426,7 @@ input[type=submit]{
   padding: .5em 0;
 }
 .social-widgets img{
-  width: 1.5em;
+  width: 1.5em; /* % is also fine */
 }
 .social-widgets h3{
   text-transform: uppercase;
