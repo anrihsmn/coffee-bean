@@ -186,19 +186,21 @@
     </div>
 
     <!-- reservation section 8 -->
-    <div class="reservation" id="reservation">
+    <div class="reservation">
       <div class="section-header">
         <h2>Reservation Form</h2>
         <hr>
       </div>
-      <form action="" method="get">
-        <div class="form-group form-group1">
-          <label for="fullname" name="fullname" >Full name</label>
-          <input type="text" placeholder="Last Name, First Name" id="fullname">
-          <label for="email" name="email" >Email Addess</label>
-          <input type="email" placeholder="mail@mail.com" id="email">
-          <label for="phonenumber" name="phonenumber">Phone Number</label>
-          <input type="tel" placeholder="(+63)912345678" id="phonenumber">
+      <form action="http:/kredo.jp" method="get">
+        <div class="form-group">
+          <label for="fullname">Full name</label>
+          <input type="text" name="fullname" id="fullname" placeholder="Last Name, First Name">
+
+          <label for="email">Email Addess</label>
+          <input type="email" name="email" id="email" placeholder="mail@mail.com">
+
+          <label for="phonenumber">Phone Number</label>
+          <input type="tel" name="phonenumber" id="phonenumber" placeholder="(+63)912345678">
 
           <p>Reservation Detaills</p>
 
@@ -207,35 +209,43 @@
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
+            <option value="morethan4">more than 4</option>
           </select>
+
           <label for="res-date">Reservation Date</label>
-          <input type="date" name="res-date" placeholder="mm/dd/yyyy" id="res-date"> 
+          <input type="date" name="res-date"  id="res-date" placeholder="mm/dd/yyyy"> 
 
           <p>Reservation Time</p>
           <div class="res-time">
             <input type="radio" name="time" value="morning" id="morning">
             <label for="morning">Morning</label>
+
             <input type="radio" name="time" value="afternoon" id="afternoon">
             <label for="afternoon">Afternoon</label>
+
             <input type="radio" name="time" value="night" id="night">
             <label for="night">Night</label>
           </div>
         </div>
 
-        <div class="form-group form-group2">
-          <label for="">Addictional Request</label>
+        <div class="form-group">
+          <label for="request">Addictional Request</label>
           <textarea name="add-request" id="add-request" cols="30" rows="10"></textarea>
-          <h3>Payment</h3>
-          <p>PaymentAccepted Cards</p>
 
-          <label for="card-name" name="name-card" >Full name </label>
-          <input type="text" placeholder="John Doe" id="card-name">
+          <h3>Payment</h3>
+          <p>Payment Accepted Cards</p>
+
+          <label for="card-name">Full name </label>
+          <input type="text" name="name-card" id="card-name" placeholder="John Doe">
+
           <label for="cc-num">Credit Card Number</label>
-          <input type="number" placeholder="1234567890" name="cc-num" id="card-number">
+          <input type="number" name="cc-num" id="cc-num" placeholder="1234567890">
+
           <div class="agreement">
             <input type="checkbox" name="agree" id="agree" value="agree">
             <label for="agree">I agree in the terms and conditions.</label>
           </div>
+          
           <input type="submit" name="submit" id="submit" value="Send">
         </div>
       </form>

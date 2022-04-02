@@ -322,11 +322,13 @@ form label{
   /* color: #312a26;  no need*/
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+  text-transform: capitalize;
 }
-form input, form textarea, form select{
+form input,form textarea,form select{
   width: 100%;
   padding: 1em;
   /* font-family: 'Raleway', sans-serif; no need */
+  margin-bottom: 1em;
 }
 .res-time{
   text-align: center;
@@ -334,7 +336,7 @@ form input, form textarea, form select{
 .res-time input{
   width: auto;
 }
-.form-group2 h3{
+.form-group h3{
   text-align: center;
   text-transform: uppercase;
 }
